@@ -17,3 +17,11 @@ def xor_all(bits):
         result = result ^ (bits&1)
         bits = bits >> 1
     return result
+
+def read_from_file(file_name):
+  """
+  returns iterator that loops through each line of file, returning the integer on that line
+  """
+  with open(file_name, 'r') as f:
+    for l in f:
+      yield int(l[0:len(l)-1])

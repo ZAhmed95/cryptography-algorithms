@@ -1,14 +1,7 @@
 import math
+from ...utils.misc import read_from_file
 
-def read_from_file(file_name):
-    """
-    returns iterator that loops through each line of file, returning the integer on that line
-    """
-    with open(file_name, 'r') as f:
-        for l in f:
-            yield int(l[0:len(l)-1])
-
-def brute_factor(n):
+def brute_factor(n, file_name='primes.txt'):
     """
     This function computes the prime factorization of n, using brute force.
     
@@ -22,7 +15,7 @@ def brute_factor(n):
     # until no more factors can be found
     prime_factors = [] # list to hold all prime factors, from least to greatest
     sqrt_n = math.sqrt(n) # calculate sqrt(n)
-    for d in read_from_file('primes.txt'):
+    for d in read_from_file(file_name):
         if (d > sqrt_n): break
         # while d is a factor of n:
         while (n%d == 0):
