@@ -35,3 +35,6 @@ def self_shrinking_lfsr(tap, fill):
         # clock twice
         fill = clock()
         fill = clock()
+
+# See https://en.wikipedia.org/wiki/Self-shrinking_generator for info on the self shrinking LFSR
+# See https://en.wikipedia.org/wiki/Linear-feedback_shift_register for info on LFSRs in general
