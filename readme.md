@@ -10,8 +10,8 @@ Found in primes/prime_checker.py
 
 Algorithms include:
 
-- Fermat test: a simple and very fast primality test, with good success rate
-- Miller Rabin: slower than Fermat, but extremely reliable
+- [Fermat test](https://en.wikipedia.org/wiki/Fermat_primality_test): a simple and very fast primality test, with good success rate
+- [Miller Rabin](https://en.wikipedia.org/wiki/Miller%E2%80%93Rabin_primality_test): slower than Fermat, but extremely reliable
 
 ### Prime generation
 
