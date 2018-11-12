@@ -19,7 +19,7 @@ Found in primes/prime_generator.py
 
 Algorithms include:
 
-- Sieve of Erastosthenes: the classic method
+- [Sieve of Erastosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes): the classic method
 
 ### Discrete Log Problems
 
